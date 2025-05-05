@@ -8,19 +8,16 @@ import Home from './pages/Home';
 import Principal from './pages/Principal';
 
 function App() {
-
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Principal></Principal>}></Route>
-          <Route path='/home' element={<Home></Home>}></Route>
-          <Route path='/contato' element={<Contato></Contato>}></Route>
-          <Route path='/projetos' element={<Projetos></Projetos>}></Route>
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
+    <BrowserRouter basename="/React-Portfolio-V1">
+      <Routes>
+        <Route path='/' element={<Principal />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/contato' element={<Contato />} />
+        <Route path='/projetos' element={<Projetos />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
