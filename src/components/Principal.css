@@ -1,0 +1,139 @@
+.container-content{
+    display: flex;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: linear-gradient(blue, white);
+
+}
+
+.container-header-navigation{
+    display: flex;
+    padding: 20px;
+    text-align: right;
+    justify-content: right;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.container{
+  margin-bottom: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+/* imagem */
+#img-perfil{
+    height: 300px;
+    animation: floatUpDown 2s ease-in-out infinite;
+}
+
+/* Keyframes da animação */
+@keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* sobe */
+    }
+    100% {
+      transform: translateY(0); /* volta */
+    }
+  }
+
+#logos-header{
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+#logos-header:hover{
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+span{
+    color: rgb(79, 79, 236);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+
+}
+
+h1{
+
+    color: wheat;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.subtitle{
+    color: rgb(79, 79, 236);
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+
+/* button{
+    padding: 15px;
+    width: 200px;
+    color: #fff;
+    background-color: rgb(91, 91, 246);
+    border: none;
+    border-radius: 20px;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+} */
+
+/* button:hover{
+    opacity: 0.9;
+    transform: scale(1.2);
+} */
+
+button {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: rgb(113, 113, 251);
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 15px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  /* só anima se tiver a classe .loading */
+  button.loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    animation: fillBar 3s linear forwards;
+    z-index: 0;
+  }
+  
+  /* animação */
+  @keyframes fillBar {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  

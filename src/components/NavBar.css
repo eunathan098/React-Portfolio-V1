@@ -1,0 +1,33 @@
+.container-navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    padding: 15px;
+    list-style: none;
+}
+
+.navigation{
+    display: flex;
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    color: rgba(37, 4, 104, 0.373);
+    text-decoration: none;
+}
+
+.navigation:hover{
+    transform: scale(1.1);
+}
+
+#logo-perfil{
+    height: 35px;
+}

@@ -1,0 +1,30 @@
+.container-section-primary{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#imagem-perfil{
+    height: 250px;
+    border-radius: 100%;
+}
+
+.container-left{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-right{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
