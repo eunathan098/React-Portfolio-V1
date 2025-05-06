@@ -1,0 +1,121 @@
+/* Reset e fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  /* Container principal */
+  .container-content-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Formulário */
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.458);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  /* Cabeçalho do formulário */
+  .container-form-header {
+    background-color: rgb(127, 127, 249);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .container-form-header h1 {
+    color: #fff;
+  }
+  
+  /* Estrutura do formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  label span {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 5px;
+  }
+  
+  /* Inputs e textarea */
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.2s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: rgb(127, 127, 249);
+  }
+  
+  /* Botão */
+  #btn-enviar {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    background-color: rgb(127, 127, 249);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+  }
+  
+  #btn-enviar:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .container-form {
+      width: 90%;
+    }
+  
+    label span {
+      font-size: 16px;
+    }
+  
+    input,
+    textarea {
+      font-size: 14px;
+    }
+  
+    #btn-enviar {
+      font-size: 16px;
+    }
+  }
+  

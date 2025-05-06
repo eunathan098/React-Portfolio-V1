@@ -17,12 +17,24 @@ function Principal() {
     }, 3000);
   }
 
+  
+
   return (
     <>
       <div className="container-content">
         <div className="container-header-navigation">
-          <li> <img src={logoGithub} alt="" id="logos-header" /> </li>
-          <li> <img src={logoWhatsApp} alt="" id="logos-header" /> </li>
+      <ul className="navigation-principal">
+        <li>
+          <a href="https://github.com/eunathan098" target="_blank" rel="noopener noreferrer">
+            <img src={logoGithub} alt="GitHub" id="logos-header" />
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/5511963063466" target="_blank" rel="noopener noreferrer">
+            <img src={logoWhatsApp} alt="WhatsApp" id="logos-header" />
+          </a>
+        </li>
+      </ul>   
         </div>
 
         <div className="container">

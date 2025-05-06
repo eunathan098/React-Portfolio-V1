@@ -8,7 +8,10 @@
     height: 100%;
     flex-direction: column;
     background: linear-gradient(blue, white);
+}
 
+.navigation-principal{
+  display: flex;
 }
 
 .container-header-navigation{
@@ -19,6 +22,7 @@
     position: absolute;
     width: 100%;
     top: 0;
+    flex-direction: row;
 }
 
 .container{
@@ -31,8 +35,9 @@ li{
 
 /* imagem */
 #img-perfil{
-    height: 300px;
+    height: 250px;
     animation: floatUpDown 2s ease-in-out infinite;
+    border-radius: 100%;
 }
 
 /* Keyframes da animação */
@@ -41,15 +46,15 @@ li{
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-20px); /* sobe */
+      transform: translateY(-20px);
     }
     100% {
-      transform: translateY(0); /* volta */
+      transform: translateY(0);
     }
   }
 
 #logos-header{
-    height: 40px;
+    height: 30px;
     margin-right: 20px;
     cursor: pointer;
     transition: ease-in-out 0.3s;
@@ -63,42 +68,23 @@ li{
 span{
     color: rgb(79, 79, 236);
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
 }
 
 h1{
-
     color: wheat;
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
 }
 
 .subtitle{
     color: rgb(79, 79, 236);
     font-size: 20px;
-    font-family: "Nunito", sans-serif;
-    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
 }
-
-/* button{
-    padding: 15px;
-    width: 200px;
-    color: #fff;
-    background-color: rgb(91, 91, 246);
-    border: none;
-    border-radius: 20px;
-    font-family: "Nunito", sans-serif;
-    cursor: pointer;
-    transition: ease-in-out 0.3s;
-} */
-
-/* button:hover{
-    opacity: 0.9;
-    transform: scale(1.2);
-} */
 
 button {
     position: relative;
@@ -113,8 +99,11 @@ button {
     border: none;
     border-radius: 20px;
   }
+
+  button:hover {
+    opacity: 0.8;
+  }
   
-  /* só anima se tiver a classe .loading */
   button.loading::before {
     content: '';
     position: absolute;
@@ -127,7 +116,6 @@ button {
     z-index: 0;
   }
   
-  /* animação */
   @keyframes fillBar {
     0% {
       width: 0%;
@@ -136,4 +124,3 @@ button {
       width: 100%;
     }
   }
-  
