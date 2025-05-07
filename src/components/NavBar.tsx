@@ -1,6 +1,6 @@
 import './NavBar.css';
 import logoPerfil from '../assets/logo-perfil.png';
-// import Principal from '../pages/Principal';
+import iconMenuHamburguer from '../assets/menu-de-hamburguer.png';
 import { Link } from 'react-router-dom';
 
 function NavBar(){
@@ -14,6 +14,7 @@ function NavBar(){
                     <li> <Link to="/contato" className='navigation'> Contato</Link> </li>
                 </ul>
             </nav>
+            <img src={iconMenuHamburguer} alt="icone-menu" id='menu-hamburguer'/>
         </div>
     )
 }

@@ -19,6 +19,7 @@ import iconeReact from '../assets/logo-react.jpeg'
 import iconeNodeJs from '../assets/logo-nodejs.jpeg'
 import iconePostgres from '../assets/logo-postgres.jpeg'
 import iconeAPI from '../assets/logo-api-rest.jpeg'
+import MenuMobile from "../components/Menu-Mobile"
 
 function Home(){
     return(
@@ -66,12 +67,15 @@ function Home(){
                     </div>
                 </div>
 
+                {/* Menu Mobile */}
+                <MenuMobile></MenuMobile>
+
                 <div className="container-sobre-home">
                     <div className="container sobre">
                         <img src={imgProgramer} alt="imgProgramer" id="img-perfil-home"/>
                         <div className="container-txt">
                             <p className="txt">
-                            Olá, muito prazer, sou o Nathan!  😉 <br></br><br></br>
+                            Olá, muito prazer, sou o Nathan! 😉 <br></br><br></br>
 
                             Desenvolvedor Full Stack atualmente estudando Análise e Desenvolvimento de Sistemas
                             e com cursos complementares de especialização na área de TI.<br></br>

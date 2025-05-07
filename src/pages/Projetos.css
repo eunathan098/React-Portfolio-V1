@@ -15,7 +15,7 @@ body, html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Altura mínima para cobrir a tela, mas permite crescer */
+  min-height: 100vh;
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
@@ -35,8 +35,8 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 400px;
   background-color: #fff;
   color: white;
   font-weight: bold;
@@ -45,6 +45,7 @@ body, html {
   transition: transform 0.3s ease;
   cursor: pointer;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .projeto:hover {
@@ -58,6 +59,7 @@ body, html {
   top: 0;
   position: relative;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 
 #inDeveloper {
@@ -78,7 +80,6 @@ body, html {
   padding: 10px;
   width: 100px;
   border-radius: 10px;
-  margin: 5px;
   color: #fff;
   background-color: rgba(90, 36, 199, 0.8);
   font-family: "Nunito", sans-serif;
@@ -94,8 +95,8 @@ body, html {
 /* 📱 Mobile Responsiveness */
 @media (max-width: 768px) {
   .container-projetos-content {
-    padding-top: 100px; /* Deixe espaço pro Header se for fixo */
-    padding-bottom: 100px; /* Deixe espaço pro Footer */
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .projeto {

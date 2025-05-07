@@ -4,6 +4,7 @@ import "../components/Principal.css";
 import imgPerfil from '../assets/nathanlogo.png';
 import logoGithub from '../assets/github.png';
 import logoWhatsApp from '../assets/whatsapp (1).png';
+import MenuMobile from "../components/Menu-Mobile";
 
 function Principal() {
   const navigate = useNavigate();
@@ -17,10 +18,10 @@ function Principal() {
     }, 3000);
   }
 
-  
-
   return (
     <>
+      <MenuMobile></MenuMobile>
+
       <div className="container-content">
         <div className="container-header-navigation">
       <ul className="navigation-principal">
@@ -53,6 +54,7 @@ function Principal() {
       </div>
     </>
   );
+
 }
 
 export default Principal;

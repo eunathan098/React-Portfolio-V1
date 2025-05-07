@@ -4,16 +4,17 @@ import Header from "../components/Header"
 // import CSS
 import './Contato.css';
 
-
 function Contato(){
     return(
         <>
           <Header></Header>
             <div className="container-content-contato">
               <div className="container-form">
+
                 <div className="container-form-header">
                   <h1> Entre em contato </h1>
                 </div>
+                
                   <form action="">
                     <label>
                       <div className="name-input">
