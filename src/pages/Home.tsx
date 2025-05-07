@@ -19,7 +19,7 @@ import iconeReact from '../assets/logo-react.jpeg'
 import iconeNodeJs from '../assets/logo-nodejs.jpeg'
 import iconePostgres from '../assets/logo-postgres.jpeg'
 import iconeAPI from '../assets/logo-api-rest.jpeg'
-import MenuMobile from "../components/Menu-Mobile"
+// import MenuMobile from "../components/Menu-Mobile"
 
 function Home(){
     return(
@@ -68,7 +68,7 @@ function Home(){
                 </div>
 
                 {/* Menu Mobile */}
-                <MenuMobile></MenuMobile>
+                {/* <MenuMobile></MenuMobile> */}
 
                 <div className="container-sobre-home">
                     <div className="container sobre">
