@@ -76,6 +76,9 @@
     border-radius: 4px;
     outline: none;
     transition: border 0.2s ease;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.573);
+    font-family: "Nunito", sans-serif;
   }
   
   input:focus,
