@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../components/Principal.css";
 import imgPerfil from '../assets/nathanlogo.png';
 import logoGithub from '../assets/github.png';
-import logoWhatsApp from '../assets/whatsapp (1).png';
+import logoWhatsApp from '../assets/whatsapp.png';
 import MenuMobile from "../components/Menu-Mobile";
 
 function Principal() {
@@ -27,7 +27,7 @@ function Principal() {
       <ul className="navigation-principal">
         <li>
           <a href="https://github.com/eunathan098" target="_blank" rel="noopener noreferrer">
-            <img src={logoGithub} alt="GitHub" id="logos-header" />
+            <img src={logoGithub} alt="GitHub" id="logos-header"/>
           </a>
         </li>
         <li>

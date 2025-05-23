@@ -12,6 +12,10 @@
 
 .navigation-principal{
   display: flex;
+  text-align: right;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
 }
 
 .container-header-navigation{
@@ -123,4 +127,29 @@ button {
     100% {
       width: 100%;
     }
+  }
+
+  /* Dispositivos Mobile  */
+  @media (min-width: 320px) and (max-width: 768px){
+      .container-header-navigation{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .navigation-principal{
+        display: flex;
+        padding-left: 30px;
+        padding-right: 15px;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 5%;
+      }     
+
+      #logos-header{
+        height: 60px;
+        opacity: 0.5;
+      }
   }

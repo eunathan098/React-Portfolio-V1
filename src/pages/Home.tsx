@@ -8,7 +8,7 @@ import iconeWhatsApp from '../assets/whatsapp (1).png'
 import iconeLinkedin from '../assets/linkedin.png'
 import iconeGitHub from '../assets/github.png'
 import iconeGmail from '../assets/gmail (1).png'
-import imgProgramer from '../assets/imagem-perfil-programador.jpeg'
+import imgProgramer from '../assets/imagem-perfil-programador.jpeg'   
 
 // import habilidades
 import iconeHtml5 from '../assets/logo-html5.jpeg'
